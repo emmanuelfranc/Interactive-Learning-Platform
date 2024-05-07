@@ -1,0 +1,13 @@
+.container h1{
+    margin-top: 70px;
+    color: rgb(184, 20, 44);
+    text-shadow: 2px 2px #D0C0C0;
+}
+header{
+    margin-bottom: 20px;
+    background-color: #eef0fe;
+    
+}
+.btn{
+    margin-top: 50px;
+}
