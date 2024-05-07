@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <iframe src="https://replit.com/@EmmanuelFranci5/Java?lite=true" width="600" height="400" frameborder="0" allowfullscreen></iframe> -->
+
+    <link rel="stylesheet" href="codemirror-3.16/lib/codemirror.css">
+<link href="codemirror-3.16/theme/elegant.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.CodeMirror {border-top: 1px solid black; border-bottom: 1px solid black;}
+.CodeMirror {
+height: 100%
+}
+.CodeMirror-scroll {
+overflow-y: hidden;
+overflow-x: auto;
+}
+</style>
+<script src="codemirror-3.16/lib/codemirror.js"></script>
+<script src="codemirror-3.16/mode/xml/xml.js"></script>
+<script src="codemirror-3.16/mode/javascript/javascript.js"></script>
+<script src="codemirror-3.16/mode/css/css.js"></script>
+<script src="codemirror-3.16/mode/htmlmixed/htmlmixed.js"></script>
+<script src="codemirror-3.16/mode/htmlembedded/htmlembedded.js"></script>
+<script type="text/javascript">
+    var editor;
+    $(function () {
+        editor = CodeMirror.fromTextArea(document.getElementById("fileoutput"), {
+            lineNumbers: true,
+            matchBrackets: true,
+            height: "500px",
+            lineWrapping: true,
+            indentUnit: 4,
+            mode: "application/x-aspx"
+        });
+    });
+</script>
+</body>
+</html>

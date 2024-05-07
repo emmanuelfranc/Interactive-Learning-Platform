@@ -1,0 +1,1947 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Courses</title>
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+        ></script>
+
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="courses.css" />
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav
+                class="navbar sticky-top navbar-expand-lg navbar-light bg-light"
+                style="position: fixed"
+                !important
+                id="header"
+            >
+                <div class="container-fluid bar" style="width: 100%">
+                    <a class="navbar-brand fs-3 ms-3 logo" href="#homepage">
+                        <img src="neural.png" alt="Code4U Logo" /> Code4U
+                        <!-- <p class="logo-name">Code4U</p> -->
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarText"
+                        aria-controls="navbarText"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span
+                            class="navbar-toggler-icon menu"
+                            tabindex="0"
+                        ></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a
+                                    id="home"
+                                    class="nav-link mx-3 fs-5"
+                                    aria-current="page"
+                                    href="homepage.html"
+                                    >Home</a
+                                >
+                            </li>
+
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link mx-3 fs-5"
+                                    href="courses.html"
+                                    >Courses</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link mx-3 fs-5"
+                                    href="chatbot.html"
+                                    >Chat</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link mx-3 fs-5"
+                                    href="internships.html"
+                                    >Internships</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <p class="nav-link mx-3 fs-5">Dashboard</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <aside id="sidebar" class="bg-white text-black">
+            <div class="p-4">
+                <h2 class="fs-5 text-uppercase">Data Structures</h2>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="#arraylists" class="nav-link text-black"
+                            >ArraysLists</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a href="#linked-lists" class="nav-link text-black"
+                            >LinkedLists</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a href="#stacks" class="nav-link text-black">Stacks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#queues" class="nav-link text-black">Queues</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#trees" class="nav-link text-black">Trees</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#graphs" class="nav-link text-black">Graphs</a>
+                    </li>
+                </ul>
+                <h2 class="fs-5 text-uppercase mt-4">Algorithms</h2>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="#merge-sort" class="nav-link text-black"
+                            >Merge Sort</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a href="#quicksort" class="nav-link text-black"
+                            >Quick Sort</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a href="#heapsort" class="nav-link text-black"
+                            >Heap Sort</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a href="#binary" class="nav-link text-black"
+                            >Binary Search</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            href="https://visualgo.net/en/sorting"
+                            class="nav-link text-black"
+                            style="text-wrap: wrap"
+                            >Visuals of Each Sorting Algorithm</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            href="internships.html"
+                            class="nav-link text-black text-uppercase"
+                            style="text-wrap: wrap"
+                            >Apply for Internships!</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <main>
+            <section>
+                <h2 class="ds">Data Structures Getting Started</h2>
+                <section>
+                    <p class="welcome" id="arraylists">
+                        In this session, we will focus on a very versatile data
+                        structure in Java: the ArrayList. But before we do that,
+                        let's quicklly recap what we know about arrays.
+                    </p>
+                    <p>
+                        Arrays are a basic structue that allows you to store
+                        multiple values of the same type together. Remember, an
+                        array's size is fixed once it's created. They're like
+                        the fixed-sized suitcases of our program; no matter
+                        what, you cannot change the size without creating a new
+                        one.
+                    </p>
+                    <h4>Key points</h4>
+                    <ul class="list">
+                        <li>Arrays have a fixed length</li>
+                        <li>The index of the first element is 0</li>
+                        <li>Arrays are fast for indexed data access</li>
+                    </ul>
+                    <p>Now let's move on to ArrayLists</p>
+                    <h3>Introduction to ArrayLists</h3>
+                    <p>
+                        ArrayLists are part of the Java Collections Framework
+                        and are a step up from traditional arrays for several
+                        reasons. They are dynamic, meaning they can change size
+                        at runtime. Think of an ArrayList as an expandable bag;
+                        you can keep adding items to it, and it will grow to
+                        accommodate them.
+                    </p>
+
+                    <h4>Why ArrayLists?</h4>
+                    <p>
+                        ArrayLists are essential because they offer flexibility.
+                        When dealing with a collection of elements that varies
+                        in size, ArrayLists are your go-to data structure.
+                    </p>
+                    <h4>Core Concepts of ArrayLists</h4>
+                    <ul class="list">
+                        <li>
+                            <strong>Dynamic Sizing:</strong> Unlike arrays,
+                            ArrayLists can grow and shrink during the execution
+                            of a program.
+                        </li>
+                        <li>
+                            <strong>Type Safety:</strong> ArrayLists use
+                            generics, which means you can define an ArrayList of
+                            a specific type, such as <em>Integer</em> or
+                            <em>String</em>, and it will only accept that type.
+                        </li>
+                        <li>
+                            <strong>API Methods:</strong> They come with several
+                            useful methods such as <code>add()</code>,
+                            <code>remove()</code>, <code>size()</code>,
+                            <code>isEmpty()</code>, and more which make them
+                            very powerful.
+                        </li>
+                    </ul>
+                    <h4>Hands-On Practice: Working with ArrayLists</h4>
+                    <p>
+                        Alright, let's get our hands dirty with some code. I'll
+                        start with a simple example, and then you'll have a
+                        chance to try it out.
+                    </p>
+                    <pre><code>
+                    ArrayList&lt;String&gt; studentNames = new ArrayList&lt;&gt;();
+                        studentNames.add("Anjy");
+                        studentNames.add("Freya");
+                        System.out.println(studentNames); <span>// Output will be [Anjy, Freya]</span>
+                    </code></pre>
+                    <p>
+                        Notice how we can add elements without worrying about
+                        the size of the ArrayList.
+                    </p>
+                    <h5>Your Turn</h5>
+                    <p>
+                        Now, I want you to create an ArrayList to store decimal
+                        numbers (Double) and add five values to it. Then, use a
+                        loop to calculate the sum of these values.
+                    </p>
+                    <p>
+                        <strong>Real-Time Feedback:</strong> Use the in-class
+                        chat to ask questions as you go. I'll be here to provide
+                        assistance and feedback in real-time.
+                    </p>
+                    <h4>Deep Dive: Methods of ArrayList</h4>
+                    <p>
+                        Let's examine some of the common methods of the
+                        ArrayList class and see them in action.
+                    </p>
+                    <ul class="method-list">
+                        <li>
+                            <code>add(E e):</code>Appends the specified element
+                            to the end of this list.
+                        </li>
+                        <li>
+                            <code>get(int index):</code>Returns the element at
+                            the specified position in this list.
+                        </li>
+                        <li>
+                            <code>set(int index, E element):</code>Replaces the
+                            element at the specified position in this list with
+                            the specified element.
+                        </li>
+                        <li>
+                            <code>remove(int index):</code>Removes the element
+                            at the specified position in this list.
+                        </li>
+                    </ul>
+                    <p>
+                        We'll go through each of these methods and how they are
+                        used in the video and you'll get to see how they
+                        actually work
+                    </p>
+                    <h4>ArrayList in Action: A Real-world Application</h4>
+                    <p>
+                        Imagine you're working on an application for a
+                        bookstore. You have an inventory of books, and you need
+                        to manage it dynamically. Books can be added, sold
+                        (removed), and updated. An ArrayList is perfect for this
+                        scenario.
+                    </p>
+
+                    <br />
+                    <figure>
+                        <iframe
+                            src="https://www.youtube.com/embed/1nRj4ALuw7A?si=437t4lMh52Y2Pm2w"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
+                        <figcaption>
+                            This video explains the basics of ArrayLists in
+                            Java.
+                        </figcaption>
+                    </figure>
+                </section>
+                <section id="linked-lists">
+                    <h3>Introduction to LinkedLists</h3>
+                    <p>
+                        A LinkedList is a dynamic data structure that consists
+                        of a sequence of elements, each linked to the next.
+                        Unlike arrays or ArrayLists, LinkedLists store elements
+                        in a non-contiguous fashion, meaning that each element
+                        can be anywhere in memory, but they're connected through
+                        "links" or references.
+                    </p>
+                    <h4>Key Points:</h4>
+                    <ul class="list">
+                        <li>
+                            Each element (commonly called a node) contains two
+                            parts: the data and a reference (or link) to the
+                            next node in the sequence.
+                        </li>
+                        <li>
+                            LinkedLists are dynamic, so they can grow and shrink
+                            at runtime.
+                        </li>
+                        <li>
+                            They provide faster insertion and deletion compared
+                            to arrays, especially for large lists of data.
+                        </li>
+                    </ul>
+                    <h4>Understanding the Node Structure</h4>
+                    <p>
+                        The fundamental component of a LinkedList is the "node."
+                        Let's take a closer look:
+                    </p>
+                    <pre><code>
+                    class Node {
+                    Object data; // The data stored in the node
+                    Node next;   // The reference to the next node
+                }</code></pre>
+                    <p>
+                        Each node has a data field, where we store our data, and
+                        a next field, which is a reference pointing to the next
+                        node in the list.
+                    </p>
+                    <h4>Operations in a LinkedList</h4>
+                    <p>
+                        LinkedLists support various operations. Here we'll cover
+                        the basics:
+                    </p>
+                    <ul class="list">
+                        <li>
+                            Adding Elements: You can add elements at the
+                            beginning, end, or middle of the list.
+                        </li>
+                        <li>
+                            Removing Elements: Similarly, you can remove
+                            elements from any part of the list without having to
+                            shift elements like in an array.
+                        </li>
+                        <li>
+                            Searching: You can search for elements, but it may
+                            take longer than in an ArrayList because you have to
+                            traverse the list from the beginning.
+                        </li>
+                    </ul>
+                    <h2>Detailed Look at LinkedList Methods</h2>
+                    <p>
+                        LinkedLists in Java come with a robust set of methods
+                        that allow for efficient manipulation of data. Let's go
+                        through some of these methods and see how we can use
+                        them.
+                    </p>
+
+                    <h3>Adding Elements</h3>
+                    <ul class="method-list">
+                        <li>
+                            <code>add(E e)</code>: Appends the specified element
+                            to the end of the list.
+                        </li>
+                        <li>
+                            <code>addFirst(E e)</code>: Inserts the specified
+                            element at the beginning of the list.
+                        </li>
+                        <li>
+                            <code>addLast(E e)</code>: Appends the specified
+                            element to the end of the list (similar to add).
+                        </li>
+                        <li>
+                            <code>add(int index, E element)</code>: Inserts the
+                            element at the specified position in the list.
+                        </li>
+                    </ul>
+
+                    <h3>Removing Elements</h3>
+                    <ul class="method-list">
+                        <li>
+                            <code>remove()</code>: Removes and returns the first
+                            element of the list.
+                        </li>
+                        <li>
+                            <code>remove(int index)</code>: Removes the element
+                            at the specified position in the list.
+                        </li>
+                        <li>
+                            <code>removeFirst()</code>: Removes and returns the
+                            first element of the list.
+                        </li>
+                        <li>
+                            <code>removeLast()</code>: Removes and returns the
+                            last element of the list.
+                        </li>
+                    </ul>
+
+                    <h3>Accessing Elements</h3>
+                    <ul class="method-list">
+                        <li>
+                            <code>getFirst()</code>: Returns the first element
+                            in the list.
+                        </li>
+                        <li>
+                            <code>getLast()</code>: Returns the last element in
+                            the list.
+                        </li>
+                        <li>
+                            <code>get(int index)</code>: Returns the element at
+                            the specified position in the list.
+                        </li>
+                    </ul>
+
+                    <h3>Other Useful Methods</h3>
+                    <ul class="method-list">
+                        <li>
+                            <code>size()</code>: Returns the number of elements
+                            in the list.
+                        </li>
+                        <li>
+                            <code>contains(Object o)</code>: Returns true if the
+                            list contains the specified element.
+                        </li>
+                        <li>
+                            <code>indexOf(Object o)</code>: Returns the index of
+                            the first occurrence of the specified element, or -1
+                            if the list does not contain the element.
+                        </li>
+                    </ul>
+
+                    <h3>Interactive Activity: Method Exploration</h3>
+                    <p>
+                        Now, let's use some of these methods in an interactive
+                        coding activity.
+                    </p>
+                    <pre><code>LinkedList&lt;String&gt; toDoList = new LinkedList&lt;&gt;();
+                toDoList.add("Finish homework");
+                toDoList.add("Go grocery shopping");
+                toDoList.add("Call Grandma");
+                
+                // Now, let's prioritize 'Call Grandma' by moving it to the front of the list.
+                toDoList.remove("Call Grandma");
+                toDoList.addFirst("Call Grandma");
+                
+                // Print out the updated list
+                System.out.println(toDoList);
+                </code></pre>
+                    <p>
+                        In this example, we've created a to-do list, adjusted
+                        the priorities, and printed out the updated list.
+                    </p>
+                    <h4>Advantages of LinkedLists</h4>
+                    <p>
+                        Why use a LinkedList instead of an ArrayList? Here are
+                        some situations:
+                    </p>
+                    <ul class="list">
+                        <li>
+                            When you need to frequently add or remove items from
+                            the beginning or middle of the list.
+                        </li>
+                        <li>
+                            When memory space is fragmented, and it’s not
+                            possible to allocate a large contiguous block of
+                            memory for an array.
+                        </li>
+                    </ul>
+
+                    <h3>Your Task</h3>
+                    <p>
+                        Create a LinkedList to manage a simple waiting list for
+                        a doctor's appointment system. Add patients to the list,
+                        serve the first patient, and display the updated list
+                        after each patient is served.
+                    </p>
+
+                    <h4>Applying LinkedLists</h4>
+                    <p>
+                        While ArrayLists are more popular due to their
+                        constant-time positional access, LinkedLists excel in
+                        scenarios where your application requires frequent
+                        insertions and deletions.
+                    </p>
+                    <p>
+                        If you're designing a traffic management system, for
+                        instance, cars entering and exiting a parking lot would
+                        be a perfect real-life analogy to a LinkedList. Each car
+                        (node) can enter (be added) or leave (be removed)
+                        independently of the others without needing to move ever
+                        car in the lot
+                    </p>
+                    <figure>
+                        <iframe
+                            src="https://www.youtube.com/embed/N6dOwBde7-M?si=y0FnqWFmMaYe9wf-"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
+                        <figcaption>
+                            This video explains the basics of LinkedLists in
+                            Java.
+                        </figcaption>
+                    </figure>
+                </section>
+                <section id="stacks">
+                    <h2>Understanding Stacks in Java</h2>
+                    <p>
+                        Stacks are a fundamental data structure that follow a
+                        particular order in which operations are performed. The
+                        order is LIFO (Last In, First Out), meaning the last
+                        element added to the stack will be the first one to be
+                        removed. This structure is analogous to a stack of
+                        plates; you add to the top and take from the top.
+                    </p>
+
+                    <h3>Key Operations of Stacks</h3>
+                    <p>
+                        Let's review the primary operations you can perform with
+                        a Stack and their runtime complexities.
+                    </p>
+
+                    <ul class="list">
+                        <li>
+                            <strong>push:</strong> Adds an item to the top of
+                            the stack. <em>Runtime Complexity: O(1)</em>
+                        </li>
+                        <li>
+                            <strong>pop:</strong> Removes the item at the top of
+                            the stack. <em>Runtime Complexity: O(1)</em>
+                        </li>
+                        <li>
+                            <strong>peek:</strong> Returns the item at the top
+                            of the stack without removing it.
+                            <em>Runtime Complexity: O(1)</em>
+                        </li>
+                        <li>
+                            <strong>isEmpty:</strong> Checks if the stack is
+                            empty.
+                            <em>Runtime Complexity: O(1)</em>
+                        </li>
+                        <li>
+                            <strong>size:</strong> Returns the number of items
+                            in the stack. <em>Runtime Complexity: O(1)</em>
+                        </li>
+                    </ul>
+
+                    <h3>Implementing a Stack in Java</h3>
+                    <p>
+                        Java provides a <code>Stack</code> class that models
+                        this data structure. Below is an example of how to use
+                        it:
+                    </p>
+                    <pre><code>Stack&lt;Integer&gt; stack = new Stack&lt;&gt;();
+                    stack.push(10);
+                    stack.push(20);
+                    stack.push(30);
+                    System.out.println(stack.peek()); // Outputs 30
+                    stack.pop();
+                    System.out.println(stack.peek()); // Outputs 20
+                    </code></pre>
+                    <p>
+                        In this code snippet, we're pushing elements onto the
+                        stack and then popping the top element off to see how
+                        LIFO is implemented.
+                    </p>
+
+                    <h3>Interactive Activity: Exploring Stack Operations</h3>
+                    <p>
+                        Now it's your turn to try out these operations. Create a
+                        stack to manage browser history, which allows you to go
+                        back to the previous page.
+                    </p>
+                    <pre><code>Stack&lt;String&gt; browserHistory = new Stack&lt;&gt;();
+                    browserHistory.push("Homepage");
+                    browserHistory.push("About Us");
+                    browserHistory.push("Contact Page");
+                    
+                    // Going back to the previous page
+                    browserHistory.pop();
+                    System.out.println("Current Page: " + browserHistory.peek());
+                    </code></pre>
+                    <p>
+                        As you follow this example, think about the order in
+                        which pages are visited and how the stack allows you to
+                        navigate back.
+                    </p>
+
+                    <h3>Runtime Complexity and Use Cases</h3>
+                    <p>
+                        Understanding the runtime complexity of stack operations
+                        is crucial. Since all basic operations are O(1), stacks
+                        are highly efficient for scenarios where you need to
+                        manage elements in a LIFO manner.
+                    </p>
+                    <p>
+                        Common use cases for stacks include undo mechanisms in
+                        text editors, call stack management in programming
+                        languages, and for algorithms such as Depth-First Search
+                        (DFS) in graph traversal.
+                    </p>
+
+                    <h3>Assignment: Implementing a Stack</h3>
+                    <p>
+                        Your task is to implement a stack that manages a series
+                        of operations in a calculator app. The app should allow
+                        the user to undo the last operation performed.
+                    </p>
+                    <pre><code>Stack&lt;String&gt; calculatorOperations = new Stack&lt;&gt;();
+                    calculatorOperations.push("Add 5");
+                    calculatorOperations.push("Multiply by 2");
+                    calculatorOperations.push("Subtract 3");
+                    
+                    // Undo the last operation
+                    calculatorOperations.pop();
+                    System.out.println("Last Operation: " + calculatorOperations.peek());
+                    </code></pre>
+                    <p>
+                        Think about how each operation affects the state of the
+                        calculator and how you can use the stack to step back
+                        through those states.
+                    </p>
+
+                    <h3>Conclusion</h3>
+                    <p>
+                        Stacks are a powerful yet simple data structure that are
+                        instrumental in many aspects of computer science and
+                        software development. The LIFO principle can be applied
+                        to a variety of problems, and understanding how to
+                        effectively implement and utilize stacks will greatly
+                        enhance your programming capabilities.
+                    </p>
+                    <p>
+                        Experiment with stacks and consider how their
+                        constant-time operations can make your algorithms more
+                        efficient. If you have any questions or insights, please
+                        share them in the comments section. Let's learn and grow
+                        together!
+                    </p>
+                    <figure>
+                        <iframe
+                            src="https://www.youtube.com/embed/KInG04mAjO0?si=NH7JnLIC15r9UH-B"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
+                        <figcaption>
+                            This video explains the basics of Stacks in Java.
+                        </figcaption>
+                    </figure>
+                </section>
+                <section id="queues">
+                    <h2>Introduction to Queues in Java</h2>
+                    <p>
+                        Queues are a fundamental data structure that operate on
+                        a First In, First Out (FIFO) principle. This is similar
+                        to a line of customers waiting in a bank: the first
+                        customer to get in line is the first one to be served
+                        and leave the line. Queues are widely used in
+                        programming for managing data that needs to be processed
+                        in the order it was received.
+                    </p>
+
+                    <h3>Essential Queue Operations</h3>
+                    <p>
+                        Let's examine the primary operations that can be
+                        performed with a Queue and their runtime complexities.
+                    </p>
+
+                    <ul class="list">
+                        <li>
+                            <strong>offer:</strong> Adds an item to the end of
+                            the queue. <em>Runtime Complexity: O(1)</em>
+                        </li>
+                        <li>
+                            <strong>poll:</strong> Removes and returns the item
+                            at the front of the queue.
+                            <em>Runtime Complexity: O(1)</em>
+                        </li>
+                        <li>
+                            <strong>peek:</strong> Returns the item at the front
+                            of the queue without removing it.
+                            <em>Runtime Complexity: O(1)</em>
+                        </li>
+                        <li>
+                            <strong>isEmpty:</strong> Checks if the queue is
+                            empty.
+                            <em>Runtime Complexity: O(1)</em>
+                        </li>
+                        <li>
+                            <strong>size:</strong> Returns the number of items
+                            in the queue. <em>Runtime Complexity: O(1)</em>
+                        </li>
+                    </ul>
+
+                    <h3>Queue Implementation in Java</h3>
+                    <p>
+                        Java provides several classes that implement the Queue
+                        interface, including <code>LinkedList</code>, which can
+                        also function as a Queue. Here's an example:
+                    </p>
+                    <pre><code>Queue&lt;Integer&gt; queue = new LinkedList&lt;&gt;();
+                    queue.offer(5);
+                    queue.offer(10);
+                    queue.offer(15);
+                    System.out.println(queue.peek()); // Outputs 5
+                    queue.poll();
+                    System.out.println(queue.peek()); // Outputs 10
+                    </code></pre>
+                    <p>
+                        This demonstrates enqueueing and dequeueing items from
+                        the queue, adhering to the FIFO principle.
+                    </p>
+
+                    <h3>Interactive Activity: Working with Queues</h3>
+                    <p>
+                        It's time to put your knowledge into action. Create a
+                        queue to simulate a customer service line, allowing
+                        customers to be served in the order they arrive.
+                    </p>
+                    <pre><code>Queue&lt;String&gt; customerQueue = new LinkedList&lt;&gt;();
+                    customerQueue.offer("Customer 1");
+                    customerQueue.offer("Customer 2");
+                    customerQueue.offer("Customer 3");
+                    
+                    // Serve the first customer
+                    customerQueue.poll();
+                    System.out.println("Next Customer: " + customerQueue.peek());
+                    </code></pre>
+                    <p>
+                        Follow this pattern to manage the service line
+                        effectively, ensuring that each customer is served
+                        fairly.
+                    </p>
+
+                    <h3>Runtime Complexity and Practical Applications</h3>
+                    <p>
+                        Understanding the runtime complexity of queue operations
+                        is important for performance considerations. All primary
+                        queue operations have a runtime complexity of O(1),
+                        making queues a highly efficient data structure for
+                        managing sequential data.
+                    </p>
+                    <p>
+                        Queues are practical in numerous situations, such as
+                        task scheduling, managing threads in multithreading, and
+                        in algorithms like Breadth-First Search (BFS) for graph
+                        traversal.
+                    </p>
+
+                    <h3>Assignment: Implementing a Queue</h3>
+                    <p>
+                        For this assignment, create a queue to manage printing
+                        tasks sent to a printer. As tasks are completed, they
+                        should be dequeued from the print queue.
+                    </p>
+                    <pre><code>Queue&lt;String&gt; printQueue = new LinkedList&lt;&gt;();
+                    printQueue.offer("Document 1");
+                    printQueue.offer("Document 2");
+                    printQueue.offer("Photo 1");
+                    
+                    // Print the first document
+                    printQueue.poll();
+                    System.out.println("Printing: " + printQueue.peek());
+                    </code></pre>
+                    <p>
+                        Consider how the FIFO principle is important for
+                        ensuring that documents are printed in the correct
+                        order.
+                    </p>
+
+                    <h3>Conclusion</h3>
+                    <p>
+                        Queues provide a structured approach to managing data
+                        that needs to be processed sequentially. The FIFO nature
+                        of queues ensures that all elements are processed in a
+                        fair and orderly manner, mirroring many real-world
+                        scenarios.
+                    </p>
+                    <p>
+                        Experiment with the Queue data structure in your
+                        projects and think about scenarios where maintaining the
+                        order of processing is crucial. If you have any
+                        questions or would like to share your experiences, leave
+                        a comment below. Your feedback is invaluable to our
+                        learning community!
+                    </p>
+                    <figure>
+                        <iframe
+                            src="https://www.youtube.com/embed/nqXaPZi99JI?si=tjN3u7RBtCC890QG"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
+                        <figcaption>
+                            This video explains the basics of Queues in Java.
+                        </figcaption>
+                    </figure>
+                </section>
+                <section id="trees">
+                    <h2>Exploring Tree Data Structures in Java</h2>
+                    <p>
+                        Trees are hierarchical data structures that consist of
+                        nodes connected by edges. The topmost node is called the
+                        root, and each node can have child nodes but only a
+                        single parent, except for the root node which has no
+                        parent.
+                    </p>
+
+                    <h3>Key Concepts in Trees</h3>
+                    <p>
+                        A tree whose elements have at most two children is
+                        called a binary tree. Each element in a tree can be
+                        connected to two other elements, known as its children.
+                        The element above is called the parent. Trees are used
+                        to represent hierarchical structures, like file systems
+                        or organizational structures.
+                    </p>
+
+                    <h3>Tree Terminology</h3>
+                    <ul class="list">
+                        <li><strong>Node:</strong> An element of the tree.</li>
+                        <li>
+                            <strong>Edge:</strong> The connection between two
+                            nodes.
+                        </li>
+                        <li>
+                            <strong>Root:</strong> The top node without a
+                            parent.
+                        </li>
+                        <li><strong>Leaf:</strong> A node without children.</li>
+                        <li>
+                            <strong>Depth:</strong> The length of the path from
+                            the root to the node.
+                        </li>
+                        <li>
+                            <strong>Height:</strong> The length of the path from
+                            the node to the deepest leaf.
+                        </li>
+                    </ul>
+
+                    <h3>Tree Operations and Runtime Complexity</h3>
+                    <p>
+                        Trees support various operations. The runtime complexity
+                        for these operations can vary depending on the type of
+                        tree and its balance.
+                    </p>
+
+                    <ul class="list">
+                        <li>
+                            <strong>Insert:</strong> Add a node to the tree.
+                            <em
+                                >Runtime Complexity: O(log n) for a balanced
+                                tree</em
+                            >
+                        </li>
+                        <li>
+                            <strong>Delete:</strong> Remove a node from the
+                            tree.
+                            <em
+                                >Runtime Complexity: O(log n) for a balanced
+                                tree</em
+                            >
+                        </li>
+                        <li>
+                            <strong>Search:</strong> Find a node in the tree.
+                            <em
+                                >Runtime Complexity: O(log n) for a balanced
+                                tree</em
+                            >
+                        </li>
+                        <li>
+                            <strong>Traverse:</strong> Visit all the nodes in
+                            the tree. <em>Runtime Complexity: O(n)</em>
+                        </li>
+                    </ul>
+
+                    <h3>Traversing a Tree</h3>
+                    <p>
+                        Traversing a tree means visiting all the nodes in a
+                        specific order. There are several ways to do this:
+                    </p>
+
+                    <ul class="list">
+                        <li>
+                            <strong>In-order (LNR):</strong> Visit the left
+                            branch, then the current node, and finally, the
+                            right branch.
+                        </li>
+                        <li>
+                            <strong>Pre-order (NLR):</strong> Visit the current
+                            node before its child nodes.
+                        </li>
+                        <li>
+                            <strong>Post-order (LRN):</strong> Visit the current
+                            node after its child nodes.
+                        </li>
+                        <li>
+                            <strong>Level-order:</strong> Visit the nodes on
+                            each level from left to right.
+                        </li>
+                    </ul>
+
+                    <h3>Example: Binary Search Tree (BST)</h3>
+                    <p>
+                        A Binary Search Tree is a tree in which all the nodes
+                        follow the below properties:
+                    </p>
+                    <ul class="list">
+                        <li>
+                            The left sub-tree of a node has a key less than or
+                            equal to its parent node's key.
+                        </li>
+                        <li>
+                            The right sub-tree of a node has a key greater than
+                            to its parent node's key.
+                        </li>
+                    </ul>
+                    <p>
+                        Thus, BST divides all its sub-trees into two segments;
+                        the left sub-tree and the right sub-tree and can be
+                        defined as:
+                    </p>
+                    <pre><code>class Node {
+                        int key;
+                        Node left, right;
+                    
+                        public Node(int item) {
+                            key = item;
+                            left = right = null;
+                        }
+                    }
+                    
+                    class BinarySearchTree {
+                        Node root;
+                    
+                        BinarySearchTree() {
+                            root = null;
+                        }
+                    
+                        // Method to insert a new key
+                        void insert(int key) {
+                            root = insertRec(root, key);
+                        }
+                        
+                        /* A recursive function to insert a new key in BST */
+                        Node insertRec(Node root, int key) {
+                    
+                            /* If the tree is empty, return a new node */
+                            if (root == null) {
+                                root = new Node(key);
+                                return root;
+                            }
+                    
+                            /* Otherwise, recur down the tree */
+                            if (key &lt; root.key)
+                                root.left = insertRec(root.left, key);
+                            else if (key > root.key)
+                                root.right = insertRec(root.right, key);
+                    
+                            /* return the (unchanged) node pointer */
+                            return root;
+                        }
+                        
+                        // Method to traverse the tree in-order
+                        void inorder() {
+                           inorderRec(root);
+                        }
+                    
+                        // A utility function to do inorder traversal of BST
+                        void inorderRec(Node root) {
+                            if (root != null) {
+                                inorderRec(root.left);
+                                System.out.println(root.key);
+                                inorderRec(root.right);
+                            }
+                        }
+                    }
+                    </code></pre>
+                    <p>
+                        This code defines a basic BST and methods to insert a
+                        new key and perform in-order traversal.
+                    </p>
+
+                    <h3>Assignment: Implementing a BST</h3>
+                    <p>
+                        Create a Binary Search Tree and perform the following
+                        operations:
+                    </p>
+                    <ul class="list">
+                        <li>Insert multiple keys into the tree.</li>
+                        <li>Delete a key from the tree.</li>
+                        <li>Search for a key in the tree.</li>
+                        <li>Perform an in-order traversal of the tree.</li>
+                    </ul>
+                    <p>
+                        Consider how the operations maintain the BST properties
+                        and how the traversal orders affect the output.
+                    </p>
+
+                    <h3>Conclusion</h3>
+                    <p>
+                        Trees are versatile data structures that can model
+                        various real-world scenarios, such as organizational
+                        hierarchies and decision processes. They are
+                        particularly useful for storing sorted data and
+                        facilitating fast retrieval.
+                    </p>
+                    <p>
+                        Practice implementing different types of trees and their
+                        associated operations. Feel free to share any questions
+                        or insights in the comments section. Happy coding!
+                    </p>
+                    <figure>
+                        <iframe
+                            src="https://www.youtube.com/embed/Etpc_-br5rI?si=jLqOD1SmeMcddZDJ"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
+                        <figcaption>
+                            This video explains the basics of Trees in Java.
+                        </figcaption>
+                    </figure>
+                </section>
+                <section id="graphs">
+                    <h2>Graph Data Structures in Java</h2>
+                    <p>
+                        Graphs are non-linear data structures composed of
+                        vertices (or nodes) and edges that connect these
+                        vertices. They are used to represent networks, such as
+                        social networks, computer networks, and road maps.
+                    </p>
+
+                    <h3>Graph Terminology</h3>
+                    <ul class="list">
+                        <li><strong>Vertex:</strong> A node in the graph.</li>
+                        <li>
+                            <strong>Edge:</strong> The connection between two
+                            vertices.
+                        </li>
+                        <li>
+                            <strong>Adjacent:</strong> If two vertices are
+                            connected by an edge, they are said to be adjacent.
+                        </li>
+                        <li>
+                            <strong>Path:</strong> A sequence of vertices where
+                            each adjacent pair is connected by an edge.
+                        </li>
+                        <li>
+                            <strong>Directed Graph:</strong> A graph where the
+                            edges have a direction.
+                        </li>
+                        <li>
+                            <strong>Undirected Graph:</strong> A graph where the
+                            edges do not have a direction.
+                        </li>
+                    </ul>
+
+                    <h3>Graph Operations and Runtime Complexity</h3>
+                    <p>
+                        Operations on graphs can vary in runtime complexity
+                        based on the implementation and whether the graph is
+                        directed or undirected, weighted or unweighted, and
+                        other factors.
+                    </p>
+
+                    <ul class="list">
+                        <li>
+                            <strong>Add Vertex:</strong> Add a new vertex to the
+                            graph. <em>Runtime Complexity: O(1)</em>
+                        </li>
+                        <li>
+                            <strong>Add Edge:</strong> Add a new edge between
+                            two vertices. <em>Runtime Complexity: O(1)</em>
+                        </li>
+                        <li>
+                            <strong>Find Vertex:</strong> Find a vertex in the
+                            graph. <em>Runtime Complexity: O(V)</em>
+                        </li>
+                        <li>
+                            <strong>Find Edge:</strong> Check if there is an
+                            edge between two vertices.
+                            <em>Runtime Complexity: O(V)</em>
+                        </li>
+                    </ul>
+
+                    <h3>Representing Graphs in Java</h3>
+                    <p>
+                        There are multiple ways to represent graphs in Java. Two
+                        of the most common representations are adjacency
+                        matrices and adjacency lists.
+                    </p>
+
+                    <h4>Adjacency Matrix</h4>
+                    <p>
+                        An adjacency matrix is a 2D array where each cell [i][j]
+                        indicates whether there is an edge from vertex i to
+                        vertex j.
+                    </p>
+                    <pre><code>int[][] adjacencyMatrix = {
+                        {0, 1, 0, 0},
+                        {1, 0, 1, 1},
+                        {0, 1, 0, 1},
+                        {0, 1, 1, 0}
+                    };</code></pre>
+                    <p>
+                        A value of 1 indicates an edge, and a value of 0
+                        indicates no edge.
+                    </p>
+
+                    <h4>Adjacency List</h4>
+                    <p>
+                        An adjacency list represents the graph as an array of
+                        lists. The index of the array represents a vertex and
+                        the list at that index contains the adjacent vertices.
+                    </p>
+                    <pre><code>List&lt;Integer&gt;[] adjacencyList = new List&lt;Integer&gt;[4];
+                    for (int i = 0; i &lt; 4; i++) {
+                        adjacencyList[i] = new ArrayList&lt;Integer&gt;();
+                    }
+                    adjacencyList[0].add(1);
+                    adjacencyList[1].add(0); adjacencyList[1].add(2); adjacencyList[1].add(3);
+                    adjacencyList[2].add(1); adjacencyList[2].add(3);
+                    adjacencyList[3].add(1); adjacencyList[3].add(2);</code></pre>
+                    <p>
+                        This represents a bidirectional graph (or an undirected
+                        graph).
+                    </p>
+
+                    <h3>Exploring Graph Algorithms</h3>
+                    <p>
+                        Several algorithms allow us to traverse or search
+                        through graphs. Two fundamental algorithms are:
+                    </p>
+
+                    <ul class="list">
+                        <li>
+                            <strong>Depth-First Search (DFS):</strong> An
+                            algorithm for traversing or searching tree or graph
+                            data structures. It starts at the root node and
+                            explores as far as possible along each branch before
+                            backtracking.
+                        </li>
+                        <li>
+                            <strong>Breadth-First Search (BFS):</strong> An
+                            algorithm for searching a tree or traversing
+                            structures. It starts at the tree root and explores
+                            the neighbor nodes first, before moving to the next
+                            level neighbors.
+                        </li>
+                    </ul>
+
+                    <h3>Assignment: Implementing Graph Algorithms</h3>
+                    <p>
+                        For this assignment, choose an implementation for a
+                        graph (either adjacency matrix or list) and perform the
+                        following:
+                    </p>
+                    <ul class="list">
+                        <li>
+                            Implement DFS to find a path between two vertices.
+                        </li>
+                        <li>
+                            Implement BFS to find the shortest path between two
+                            vertices.
+                        </li>
+                    </ul>
+
+                    <h3>Conclusion</h3>
+                    <p>
+                        Graphs are versatile and powerful data structures that
+                        help solve numerous problems in computer science, from
+                        networking to problem-solving in artificial
+                        intelligence. By understanding and implementing various
+                        graph algorithms, you can tackle a wide array of complex
+                        challenges.
+                    </p>
+                    <p>
+                        As you work through these algorithms, consider their
+                        application in real-world scenarios and how graph theory
+                        can provide solutions to intricate problems. Share any
+                        questions or experiences in the comments, and let's
+                        learn from each other.
+                    </p>
+                    <figure>
+                        <iframe
+                            src="https://www.youtube.com/embed/-VgHk7UMPP4?si=_D2zrzEbD6K3S2Z2"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
+                        <figcaption>
+                            This video explains the basics of Graphs in Java.
+                        </figcaption>
+                    </figure>
+                </section>
+
+                <h4>Getting Started with Algorithms</h4>
+                <section id="merge-sort">
+                    <h2>Merge Sort Algorithm Explained</h2>
+                    <p>
+                        Merge Sort is a divide-and-conquer algorithm that
+                        divides the input array into two halves, calls itself
+                        for the two halves, and then merges the two sorted
+                        halves. The merge() function is used for merging two
+                        halves. The merge(arr, l, m, r) is a key process that
+                        assumes that arr[l..m] and arr[m+1..r] are sorted and
+                        merges the two sorted sub-arrays into one.
+                    </p>
+
+                    <h3>Steps of the Merge Sort Algorithm</h3>
+                    <ol>
+                        <li>
+                            Divide the unsorted list into n sublists, each
+                            containing one element (a list of one element is
+                            considered sorted).
+                        </li>
+                        <li>
+                            Repeatedly merge sublists to produce new sorted
+                            sublists until there is only one sublist remaining.
+                            This will be the sorted list.
+                        </li>
+                    </ol>
+
+                    <h3>Runtime Complexity of Merge Sort</h3>
+                    <p>
+                        The runtime complexity of Merge Sort in all cases
+                        (worst, average, and best) is O(n log n), because the
+                        list is being split in log(n) parts and the merging
+                        process takes linear time in each part.
+                    </p>
+
+                    <h4>Example: Sorting an Array with Merge Sort</h4>
+                    <pre><code>public class MergeSort {
+                        
+                            // Merges two subarrays of arr[].
+                            // First subarray is arr[l..m]
+                            // Second subarray is arr[m+1..r]
+                            void merge(int arr[], int l, int m, int r) {
+                                // Find sizes of two subarrays to be merged
+                                int n1 = m - l + 1;
+                                int n2 = r - m;
+                        
+                                /* Create temp arrays */
+                                int L[] = new int[n1];
+                                int R[] = new int[n2];
+                        
+                                /*Copy data to temp arrays*/
+                                for (int i = 0; i &lt; n1; ++i)
+                                    L[i] = arr[l + i];
+                                for (int j = 0; j &lt; n2; ++j)
+                                    R[j] = arr[m + 1 + j];
+                        
+                                /* Merge the temp arrays */
+                        
+                                // Initial indexes of first and second subarrays
+                                int i = 0, j = 0;
+                        
+                                // Initial index of merged subarray array
+                                int k = l;
+                                while (i &lt; n1 && j &lt; n2) {
+                                    if (L[i] &lt;= R[j]) {
+                                        arr[k] = L[i];
+                                        i++;
+                                    } else {
+                                        arr[k] = R[j];
+                                        j++;
+                                    }
+                                    k++;
+                                }
+                        
+                                /* Copy remaining elements of L[] if any */
+                                while (i &lt; n1) {
+                                    arr[k] = L[i];
+                                    i++;
+                                    k++;
+                                }
+                        
+                                /* Copy remaining elements of R[] if any */
+                                while (j &lt; n2) {
+                                    arr[k] = R[j];
+                                    j++;
+                                    k++;
+                                }
+                            }
+                        
+                            // Main function that sorts arr[l..r] using merge()
+                            void sort(int arr[], int l, int r) {
+                                if (l &lt; r) {
+                                    // Find the middle point
+                                    int m = (l + r) / 2;
+                        
+                                    // Sort first and second halves
+                                    sort(arr, l, m);
+                                    sort(arr, m + 1, r);
+                        
+                                    // Merge the sorted halves
+                                    merge(arr, l, m, r);
+                                }
+                            }
+                        }
+                        </code></pre>
+
+                    <h3>Interactive Activity: Running Merge Sort</h3>
+                    <p>
+                        Now it's your turn to implement Merge Sort. Start by
+                        creating a simple array of integers and then apply the
+                        Merge Sort algorithm to sort the array.
+                    </p>
+                    <p>Here's an array to get you started:</p>
+                    <pre><code>int[] arr = {38, 27, 43, 3, 9, 82, 10};</code></pre>
+                    <p>
+                        After implementing the Merge Sort, verify that your
+                        array has been sorted correctly by printing the sorted
+                        array to the console.
+                    </p>
+
+                    <h3>Conclusion</h3>
+                    <p>
+                        Merge Sort is a powerful sorting algorithm, especially
+                        useful for large datasets. Its divide-and-conquer
+                        approach is a great example of an efficient, scalable
+                        algorithm that applies to many sorting applications.
+                    </p>
+                    <p>
+                        Understand and practice the Merge Sort algorithm to
+                        improve your understanding of sorting mechanisms and
+                        prepare for technical interviews where such algorithms
+                        are commonly discussed. If you have any questions or
+                        insights, don't hesitate to add your comments below.
+                        Let's engage and learn together!
+                    </p>
+                    <figure>
+                        <iframe
+                            src="https://www.youtube.com/embed/3j0SWDX4AtU?si=H9j-nJingyjd-5uE"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
+                        <figcaption>
+                            This video explains the basics of Merge Sort in
+                            Java.
+                        </figcaption>
+                    </figure>
+                </section>
+                <section id="quicksort">
+                    <body>
+                        <h2>Understanding QuickSort in Java</h2>
+                        <p>
+                            QuickSort is an efficient, in-place sorting
+                            algorithm that utilizes a divide and conquer
+                            strategy to sort elements. It works by selecting a
+                            'pivot' element from the array and partitioning the
+                            other elements into two sub-arrays, according to
+                            whether they are less than or greater than the
+                            pivot. The sub-arrays are then sorted recursively.
+                        </p>
+
+                        <h3>Steps of the QuickSort Algorithm</h3>
+                        <ol>
+                            <li>
+                                Choose an element from the array as the pivot
+                                (typically the last element).
+                            </li>
+                            <li>
+                                Partition the other elements into two
+                                sub-arrays: elements less than the pivot and
+                                elements greater than the pivot.
+                            </li>
+                            <li>
+                                Recursively apply the above steps to the
+                                sub-arrays.
+                            </li>
+                            <li>
+                                Combine the sub-arrays to form the sorted array.
+                            </li>
+                        </ol>
+
+                        <h3>Runtime Complexity of QuickSort</h3>
+                        <p>
+                            The average and best-case runtime complexity of
+                            QuickSort is O(n log n), but the worst-case
+                            complexity is O(n^2), which occurs when the smallest
+                            or largest element is always chosen as the pivot.
+                            However, with good pivot selection methods, the
+                            worst-case complexity is rarely encountered.
+                        </p>
+
+                        <h4>Example: Implementing QuickSort</h4>
+                        <pre><code>class QuickSort {
+                        
+                            int partition(int arr[], int low, int high) {
+                                int pivot = arr[high]; 
+                                int i = (low - 1); // index of smaller element
+                                for (int j = low; j &lt; high; j++) {
+                                    // If current element is smaller than the pivot
+                                    if (arr[j] &lt; pivot) {
+                                        i++;
+                        
+                                        // swap arr[i] and arr[j]
+                                        int temp = arr[i];
+                                        arr[i] = arr[j];
+                                        arr[j] = temp;
+                                    }
+                                }
+                        
+                                // swap arr[i+1] and arr[high] (or pivot)
+                                int temp = arr[i + 1];
+                                arr[i + 1] = arr[high];
+                                arr[high] = temp;
+                        
+                                return i + 1;
+                            }
+                        
+                            void sort(int arr[], int low, int high) {
+                                if (low &lt; high) {
+                                    // pi is partitioning index, arr[pi] is now at right place
+                                    int pi = partition(arr, low, high);
+                        
+                                    // Recursively sort elements before partition and after partition
+                                    sort(arr, low, pi - 1);
+                                    sort(arr, pi + 1, high);
+                                }
+                            }
+                        }
+                        </code></pre>
+
+                        <h3>Interactive Activity: Running QuickSort</h3>
+                        <p>
+                            It's time for you to practice QuickSort. Begin with
+                            an unsorted array of integers and then apply the
+                            QuickSort algorithm to sort it. Here is an array you
+                            can use for testing:
+                        </p>
+                        <pre><code>int[] arr = {10, 7, 8, 9, 1, 5};</code></pre>
+                        <p>
+                            Implement the QuickSort algorithm and then print out
+                            the sorted array to ensure it's correctly sorted.
+                        </p>
+
+                        <h3>Conclusion</h3>
+                        <p>
+                            QuickSort is a commonly used algorithm due to its
+                            efficiency in most scenarios. It's a fundamental
+                            algorithm that many computer systems use for sorting
+                            tasks.
+                        </p>
+                        <p>
+                            By learning and understanding QuickSort, you'll gain
+                            valuable insight into how complex problems can be
+                            solved with elegant, efficient algorithms. If you
+                            have any questions about implementing QuickSort or
+                            want to share your approach, please leave a comment
+                            below.
+                        </p>
+                    </body>
+                    <figure>
+                        <iframe
+                            src="https://www.youtube.com/embed/Vtckgz38QHs?si=Fyo25PvAncHeaWIP"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
+                        <figcaption>
+                            This video explains the basics of Quick Sort in
+                            Java.
+                        </figcaption>
+                    </figure>
+                </section>
+                <section id="heapsort">
+                    <h2>Heap Sort Algorithm in Java</h2>
+                    <p>
+                        Heap Sort is a popular comparison-based sorting
+                        technique based on binary heap data structure. It's
+                        similar to selection sort where we first find the
+                        maximum element and place the maximum element at the
+                        end. We repeat the same process for the remaining
+                        elements.
+                    </p>
+
+                    <h3>Key Concepts of Heap Sort</h3>
+                    <p>
+                        Heap Sort introduces the use of a heap to manage the
+                        sort order. A heap is a special tree-based data
+                        structure that satisfies the heap property. In a max
+                        heap, for any given node I, the value of I is greater
+                        than or equal to the values of its children, and the
+                        heap is a complete binary tree.
+                    </p>
+
+                    <h3>Heap Sort Steps and Runtime Complexity</h3>
+                    <ol>
+                        <li>Create a max heap from the input data.</li>
+                        <li>
+                            At this point, the largest item is stored at the
+                            root of the heap. Replace it with the last item of
+                            the heap, reducing the heap size by one. Finally,
+                            heapify the root of the tree.
+                        </li>
+                        <li>
+                            Repeat step 2 while the size of the heap is greater
+                            than one.
+                        </li>
+                    </ol>
+                    <p>
+                        The runtime complexity of Heap Sort is O(n log n) for
+                        all cases (best, average, and worst) as the tree height
+                        is log(n) and each level of tree takes O(n) time to
+                        process.
+                    </p>
+
+                    <h4>Example: Implementing Heap Sort</h4>
+                    <pre><code>public class HeapSort {
+                            public void sort(int arr[]) {
+                                int n = arr.length;
+                        
+                                // Build heap (rearrange array)
+                                for (int i = n / 2 - 1; i >= 0; i--)
+                                    heapify(arr, n, i);
+                        
+                                // One by one extract an element from heap
+                                for (int i = n - 1; i >= 0; i--) {
+                                    // Move current root to end
+                                    int temp = arr[0];
+                                    arr[0] = arr[i];
+                                    arr[i] = temp;
+                        
+                                    // call max heapify on the reduced heap
+                                    heapify(arr, i, 0);
+                                }
+                            }
+                        
+                            // To heapify a subtree rooted with node i which is an index in arr[] and n is size of heap
+                            void heapify(int arr[], int n, int i) {
+                                int largest = i;  // Initialize largest as root
+                                int l = 2 * i + 1;  // left = 2*i + 1
+                                int r = 2 * i + 2;  // right = 2*i + 2
+                        
+                                // If left child is larger than root
+                                if (l < n && arr[l] > arr[largest])
+                                    largest = l;
+                        
+                                // If right child is larger than largest so far
+                                if (r < n && arr[r] > arr[largest])
+                                    largest = r;
+                        
+                                // If largest is not root
+                                if (largest != i) {
+                                    int swap = arr[i];
+                                    arr[i] = arr[largest];
+                                    arr[largest] = swap;
+                        
+                                    // Recursively heapify the affected sub-tree
+                                    heapify(arr, n, largest);
+                                }
+                            }
+                        }
+                        </code></pre>
+
+                    <h3>Interactive Activity: Running Heap Sort</h3>
+                    <p>
+                        Now, let's put Heap Sort into action. Start with an
+                        unsorted array, turn it into a heap, and then sort it
+                        using the Heap Sort algorithm. Try with this array:
+                    </p>
+                    <pre><code>int[] arr = {12, 11, 13, 5, 6, 7};</code></pre>
+                    <p>
+                        After implementing the Heap Sort algorithm, print out
+                        the array to verify it has been sorted correctly.
+                    </p>
+
+                    <h3>Conclusion</h3>
+                    <p>
+                        Heap Sort is a great algorithm for cases where a fast
+                        and stable sort is needed without the need for
+                        additional memory use for merge sort, or the quick
+                        sort's worst-case O(n^2) runtime. It’s particularly
+                        useful when you're working with heaps and priority
+                        queues.
+                    </p>
+                    <p>
+                        By practicing Heap Sort, you enhance your understanding
+                        of how binary heaps function and how they can be used to
+                        maintain a sorted state. If you encounter any challenges
+                        or have insights to share, please contribute to the
+                        discussion below.
+                    </p>
+                    <figure>
+                        <iframe
+                            src="https://www.youtube.com/embed/2DmK_H7IdTo?si=OjFRzGEg0o8-mBoe"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
+                        <figcaption>
+                            This video explains the basics of Heap Sort in Java.
+                        </figcaption>
+                    </figure>
+                </section>
+                <section id="binary">
+                    <h2>Binary Search Algorithm in Java</h2>
+                    <p>
+                        Binary Search is an efficient algorithm for finding an
+                        item from a sorted list of items. It works by repeatedly
+                        dividing in half the portion of the list that could
+                        contain the item until you've narrowed the possible
+                        locations to just one.
+                    </p>
+
+                    <h3>Understanding Binary Search</h3>
+                    <p>
+                        The main idea of binary search is to divide the
+                        collection in half with each iteration. For the
+                        algorithm to work, it must be applied to a sorted
+                        collection. It compares the target value to the middle
+                        element of the collection; if they are not equal, the
+                        half in which the target cannot lie is eliminated, and
+                        the search continues on the remaining half until the
+                        item is found or the search space is empty.
+                    </p>
+
+                    <h3>Binary Search Steps and Runtime Complexity</h3>
+                    <ol>
+                        <li>Find the middle element of the array.</li>
+                        <li>
+                            If the middle element is equal to the target, return
+                            the index of the middle element.
+                        </li>
+                        <li>
+                            If the middle element is greater than the target,
+                            repeat the search on the left subarray.
+                        </li>
+                        <li>
+                            If the middle element is less than the target,
+                            repeat the search on the right subarray.
+                        </li>
+                    </ol>
+                    <p>
+                        The runtime complexity of binary search is O(log n)
+                        since with each iteration, the search space is halved.
+                    </p>
+
+                    <h4>Example: Implementing Binary Search</h4>
+                    <pre><code>class BinarySearch {
+                            // Returns index of x if it is present in arr[l..r], else return -1
+                            int binarySearch(int arr[], int l, int r, int x) {
+                                if (r >= l) {
+                                    int mid = l + (r - l) / 2;
+                        
+                                    // If the element is present at the middle itself
+                                    if (arr[mid] == x)
+                                        return mid;
+                        
+                                    // If element is smaller than mid, then it can only be present in left subarray
+                                    if (arr[mid] > x)
+                                        return binarySearch(arr, l, mid - 1, x);
+                        
+                                    // Else the element can only be present in right subarray
+                                    return binarySearch(arr, mid + 1, r, x);
+                                }
+                        
+                                // We reach here when element is not present in array
+                                return -1;
+                            }
+                        }
+                        </code></pre>
+
+                    <h3>Interactive Activity: Running Binary Search</h3>
+                    <p>
+                        Try implementing binary search on your own. Begin with
+                        the following sorted array of integers:
+                    </p>
+                    <pre><code>int[] arr = {2, 3, 4, 10, 40};</code></pre>
+                    <p>
+                        Use the binary search function to find the position of
+                        the number 10 in the array. Once you've implemented the
+                        binary search, verify that your function returns the
+                        correct index.
+                    </p>
+
+                    <h3>Conclusion</h3>
+                    <p>
+                        Binary Search is a powerful algorithm that allows for
+                        quick searching through sorted data. It's a fundamental
+                        tool in computer science, applicable in many scenarios
+                        where quick search is critical. Understanding how to
+                        implement and apply binary search will greatly improve
+                        your problem-solving skills.
+                    </p>
+                    <p>
+                        If you have any questions about binary search or its
+                        implementation, please leave a comment below. Sharing
+                        your learning experiences can provide valuable insights
+                        for others as well.
+                    </p>
+                    <figure>
+                        <iframe
+                            src="https://www.youtube.com/embed/xrMppTpoqdw?si=GZDw-cGrgBvCfbVe"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
+                        <figcaption>
+                            This video explains the basics of Binary Search in
+                            Java.
+                        </figcaption>
+                    </figure>
+                </section>
+            </section>
+        </main>
+        <style>
+            .nav-item .nav-link {
+                font-size: 18px;
+            }
+            .nav-bot {
+                margin-bottom: 0;
+                bottom: 0;
+            }
+            .bottom-nav {
+                background-color: #555;
+                color: white;
+            }
+        </style>
+        <img
+            src="up-arrow.png"
+            onclick="topFunction()"
+            id="myBtn"
+            title="Go to top"
+        />
+        <footer class="bottom-nav">
+            <div class="container" style="bottom: 0">
+                <div class="row">
+                    <div class="col-6 col-md-4 mb-3">
+                        <h5 style="color: white !important">About</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">
+                                <p
+                                    class="nav-link p-0 text-muted"
+                                    style="
+                                        text-wrap: wrap;
+                                        color: white !important;
+                                    "
+                                >
+                                    Code4U: Your one-stop platform for DSA
+                                    mastery and internship opportunities. Learn,
+                                    apply, and succeed with us.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5 style="text-wrap: nowrap; color: white !important">
+                            Contact us
+                        </h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="https://www.linkedin.com/in/emmanuel-francis-3367a821b"
+                                    class="nav-link p-0 text-muted"
+                                    style="color: white !important"
+                                    >LinkedIn</a
+                                >
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="mailto:francisemmanuel508@gmail.com"
+                                    class="nav-link p-0 text-muted"
+                                    style="color: white !important"
+                                    >Email</a
+                                >
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a
+                                    href=" "
+                                    class="nav-link p-0 text-muted"
+                                    style="color: white !important"
+                                    >+447883546947</a
+                                >
+                            </li>
+                            <li
+                                class="nav-item mb-2 text-change"
+                                onmouseover="changeText(this)"
+                                onmouseout="originalText(this)"
+                            >
+                                <p>Community</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5 style="color: white !important">
+                                Subscribe to our newsletter
+                            </h5>
+                            <p>
+                                Stay Ahead with Our Internship Newsletter Get
+                                monthly updates on the latest internship
+                                opportunities and insider tips to boost your
+                                career.
+                            </p>
+                            <div
+                                class="d-flex flex-column flex-sm-row w-100 gap-2"
+                            >
+                                <label for="newsletter1" class="visually-hidden"
+                                    >Email address</label
+                                >
+                                <input
+                                    id="newsletter1"
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Email address"
+                                    fdprocessedid="zu2krh"
+                                />
+                                <button
+                                    class="btn btn-primary"
+                                    type="button"
+                                    disabled
+                                    fdprocessedid="knpwu"
+                                    style="background-color: #0056d2 !important"
+                                >
+                                    Subscribe
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div
+                    class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top nav-bot"
+                >
+                    <p>© 2023 Code4U, Inc. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+                target: "#sidebar",
+            });
+
+            const navHeight = document.querySelector(".navbar").offsetHeight;
+            document.querySelector("#sidebar").style.top = `${navHeight}px`;
+            const footerHeight =
+                document.querySelector("footer.bottom-nav").offsetHeight;
+            document.querySelector(
+                "#sidebar"
+            ).style.bottom = `${footerHeight}px`;
+            console.log(footerHeight);
+
+            document.addEventListener("DOMContentLoaded", (event) => {
+                const navItems =
+                    document.querySelectorAll("#sidebar .nav-link");
+                const sections = document.querySelectorAll("main section");
+                let lastActiveIndex = -1;
+
+                const headerOffset =
+                    document.querySelector("nav.navbar").offsetHeight;
+                function getSectionPosition(elem) {
+                    const rect = elem.getBoundingClientRect();
+                    const scrollTop =
+                        window.pageYOffset ||
+                        document.documentElement.scrollTop;
+                    const top = rect.top + scrollTop - headerOffset;
+                    const bottom = rect.bottom + scrollTop - headerOffset;
+                    return { top, bottom };
+                }
+                function updateSectionPositions() {
+                    return Array.from(sections).map((section) =>
+                        getSectionPosition(section)
+                    );
+                }
+                let sectionPositions = updateSectionPositions();
+
+                function onScroll() {
+                    const scrollPosition = window.pageYOffset;
+
+                    for (let i = 0; i < sectionPositions.length; i++) {
+                        const { top, bottom } = sectionPositions[i];
+                        if (scrollPosition >= top && scrollPosition < bottom) {
+                            if (lastActiveIndex !== i) {
+                                if (lastActiveIndex !== -1) {
+                                    navItems[lastActiveIndex].classList.remove(
+                                        "active"
+                                    );
+                                }
+                                navItems[i].classList.add("active");
+                                lastActiveIndex = i;
+                            }
+                            break;
+                        }
+                    }
+                }
+                window.addEventListener("scroll", onScroll);
+                window.addEventListener("resize", () => {
+                    sectionPositions = updateSectionPositions();
+                    onScroll();
+                });
+            });
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction();
+            };
+
+            function scrollFunction() {
+                if (
+                    document.body.scrollTop > 20 ||
+                    document.documentElement.scrollTop > 20
+                ) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+        </script>
+    </body>
+</html>

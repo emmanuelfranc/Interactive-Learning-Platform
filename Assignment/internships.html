@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Internships Page</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+        ></script>
+        <script src="script.js" defer></script>
+        <script src="internship.js"></script>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="internships.css" />
+    </head>
+    <body>
+        <nav
+            class="navbar sticky-top navbar-expand-lg navbar-light bg-light"
+            id="header"
+        >
+            <div class="container-fluid">
+                <a class="navbar-brand fs-3 ms-3 logo" href="#homepage">
+                    <img src="neural.png" alt="Code4U Logo" /> Code4U
+                    <!-- <p class="logo-name">Code4U</p> -->
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarText"
+                    aria-controls="navbarText"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon menu" tabindex="0"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a
+                                id="home"
+                                class="nav-link mx-3 fs-5"
+                                aria-current="page"
+                                href="homepage.html"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3 fs-5" href="courses.html"
+                                >Courses</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3 fs-5" href="chatbot.html"
+                                >Chat</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link mx-3 fs-5"
+                                href="internships.html"
+                                >Internships</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link mx-3 fs-5">Dashboard</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <h2>Apply For Internships</h2>
+        </header>
+        <main>
+            <section class="radio-section">
+                <div class="year-section">
+                    <label for="year"
+                        ><h3>What is your year of University?</h3></label
+                    >
+                    <div class="radio-item">
+                        <input
+                            type="radio"
+                            id="first"
+                            name="year"
+                            value="First"
+                        />
+                        <label for="first">First</label>
+                    </div>
+                    <div class="radio-item">
+                        <input
+                            type="radio"
+                            id="second"
+                            name="year"
+                            value="Second"
+                        />
+                        <label for="second">Second</label>
+                    </div>
+                    <div class="radio-item">
+                        <input
+                            type="radio"
+                            id="third"
+                            name="year"
+                            value="Third (Penultimate)"
+                        />
+                        <label for="third">Third (Penultimate)</label>
+                    </div>
+                    <div class="radio-item">
+                        <input
+                            type="radio"
+                            id="fourth"
+                            name="year"
+                            value="Fourth"
+                        />
+                        <label for="fourth">Fourth</label>
+                    </div>
+                </div>
+
+                <div class="field-section">
+                    <label for="field"
+                        ><h3>What field are you interested in?</h3></label
+                    >
+                    <div class="checkbox">
+                        <input
+                            type="checkbox"
+                            id="ai"
+                            name="field"
+                            value="Artificial Intelligence"
+                        />
+                        <label for="ai">Artificial Intelligence</label>
+                    </div>
+                    <div class="checkbox">
+                        <input
+                            type="checkbox"
+                            id="se"
+                            name="field"
+                            value="Software Engineering"
+                        />
+                        <label for="se">Software Engineering</label>
+                    </div>
+                    <div class="checkbox">
+                        <input
+                            type="checkbox"
+                            id="it"
+                            name="field"
+                            value="Information Technology"
+                        />
+                        <label for="it">Information Technology</label>
+                    </div>
+                    <div class="checkbox">
+                        <input
+                            type="checkbox"
+                            id="consulting"
+                            name="field"
+                            value="IT Consulting"
+                        />
+                        <label for="consulting">IT Consulting</label>
+                    </div>
+                    <button type="button" style="font-size: 1.25em" id="searchButton">
+                        Search
+                    </button>
+                </div>
+                <div id="result" class="search-results"></div>
+            </section>
+
+            <script src="script.js"></script>
+        </main>
+        <footer class="bottom-nav">
+            <div class="container" style="bottom: 0">
+                <div class="row">
+                    <div class="col-6 col-md-4 mb-3">
+                        <h5 style="color: white !important">About</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">
+                                <p
+                                    class="nav-link p-0 text-muted"
+                                    style="
+                                        text-wrap: wrap;
+                                        color: white !important;
+                                    "
+                                >
+                                    Code4U: Your one-stop platform for DSA
+                                    mastery and internship opportunities. Learn,
+                                    apply, and succeed with us.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5 style="text-wrap: nowrap; color: white !important">
+                            Contact us
+                        </h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="https://www.linkedin.com/in/emmanuel-francis-3367a821b"
+                                    class="nav-link p-0 text-muted"
+                                    style="color: white !important"
+                                    >LinkedIn</a
+                                >
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="mailto:francisemmanuel508@gmail.com"
+                                    class="nav-link p-0 text-muted"
+                                    style="color: white !important"
+                                    >Email</a
+                                >
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a
+                                    href=" "
+                                    class="nav-link p-0 text-muted"
+                                    style="color: white !important"
+                                    >+447883546947</a
+                                >
+                            </li>
+                            <li
+                                class="nav-item mb-2 text-change"
+                                onmouseover="changeText(this)"
+                                onmouseout="originalText(this)"
+                            >
+                                <p style="color: white !important">Community</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5 style="color: white !important">
+                                Subscribe to our newsletter
+                            </h5>
+                            <p style="color: white !important">
+                                Stay Ahead with Our Internship Newsletter Get
+                                monthly updates on the latest internship
+                                opportunities and insider tips to boost your
+                                career.
+                            </p>
+                            <div
+                                class="d-flex flex-column flex-sm-row w-100 gap-2"
+                            >
+                                <label for="newsletter1" class="visually-hidden"
+                                    >Email address</label
+                                >
+                                <input
+                                    id="newsletter1"
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Email address"
+                                    fdprocessedid="zu2krh"
+                                />
+                                <button
+                                    class="btn btn-primary"
+                                    type="button"
+                                    disabled
+                                    fdprocessedid="knpwu"
+                                    style="background-color: #0056d2 !important"
+                                >
+                                    Subscribe
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div
+                    class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top nav-bot"
+                >
+                    <p style="color: white !important">
+                        © 2023 Code4U, Inc. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
